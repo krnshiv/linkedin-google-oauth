@@ -6,8 +6,8 @@ import {
     UpdateDateColumn,
   } from "typeorm";
   
-  @Entity()
-  export class User {
+  @Entity({ name: "users" })
+  export class CustomUser {
     @PrimaryGeneratedColumn()   id!: number;
     @Column({ unique: true })   email!: string;
     @Column()                   name!: string;
