@@ -7,7 +7,7 @@ import {
   } from "typeorm";
   
   @Entity({ name: "users" })
-  export class CustomUser {
+  export class User {
     @PrimaryGeneratedColumn()   id!: number;
     @Column({ unique: true })   email!: string;
     @Column()                   name!: string;
