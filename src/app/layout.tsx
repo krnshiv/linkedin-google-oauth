@@ -1,7 +1,8 @@
 import React from "react";
 import { getServerSession } from "next-auth/next";
-import { authOptions } from "./api/auth/[...nextauth]/route";
+
 import Providers from "@/components/Providers";
+import { authOptions } from "@/lib/auth";
 
 export default async function RootLayout({
   children,
